@@ -19,13 +19,13 @@ namespace CurRate
             InitializeComponent();
             
         }
-        SandboxConnection connection;
-        SandboxContext context;
-        Tinkoff.Trading.OpenApi.Models.Portfolio portfolio;
+        public SandboxConnection connection;
+        public SandboxContext context;
+        public Tinkoff.Trading.OpenApi.Models.Portfolio portfolio;
         //System.Threading.Tasks.Task<Tinkoff.Trading.OpenApi.Models.MarketInstrumentList> stocks;
 
-        Tinkoff.Trading.OpenApi.Models.MarketInstrumentList stocks;
-        Tinkoff.Trading.OpenApi.Models.MarketInstrument stocks_instruments;
+        public Tinkoff.Trading.OpenApi.Models.MarketInstrumentList stocks;
+        public Tinkoff.Trading.OpenApi.Models.MarketInstrument stocks_instruments;
         PortfolioForm portfolioForm;
         StocksForm stocksForm;
         BondsForm bondsForm;
