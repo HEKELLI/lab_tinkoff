@@ -262,7 +262,7 @@ namespace CurRate
             // 
             this.but_prev_stocks.Location = new System.Drawing.Point(868, 250);
             this.but_prev_stocks.Name = "but_prev_stocks";
-            this.but_prev_stocks.Size = new System.Drawing.Size(162, 63);
+            this.but_prev_stocks.Size = new System.Drawing.Size(162, 64);
             this.but_prev_stocks.TabIndex = 16;
             this.but_prev_stocks.Text = "Предыдущие акции";
             this.but_prev_stocks.UseVisualStyleBackColor = true;
@@ -368,7 +368,7 @@ namespace CurRate
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 135);
+            this.label4.Location = new System.Drawing.Point(19, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 13);
             this.label4.TabIndex = 26;
@@ -449,7 +449,7 @@ namespace CurRate
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(19, 333);
+            this.label13.Location = new System.Drawing.Point(19, 332);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(160, 13);
             this.label13.TabIndex = 34;
@@ -575,7 +575,7 @@ namespace CurRate
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(431, 135);
+            this.label27.Location = new System.Drawing.Point(431, 134);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(160, 13);
             this.label27.TabIndex = 54;
