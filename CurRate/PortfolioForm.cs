@@ -14,25 +14,25 @@ namespace CurRate
 {
     public partial class PortfolioForm : Form
     {
-        public PortfolioForm(Form1 mainForm)
+        public PortfolioForm(MainForm mainForm)
         {
             InitializeComponent();
             this.mainForm = mainForm;
             get_portfolio();
         }
-        Form1 mainForm;
+        MainForm mainForm;
         private void but_main_form_Click(object sender, EventArgs e)
         {
             this.Close();
         }
         private async void get_portfolio()
         {
-            mainForm.portfolio = await mainForm.context.PortfolioAsync("SB3336849");
+          //  mainForm.portfolio = await mainForm.context.PortfolioAsync("SB3336849");
             write_portfolio();
         }
         public void write_portfolio()
         {
-            textBox1.Text = JsonSerializer.Serialize<Tinkoff.Trading.OpenApi.Models.Portfolio>(mainForm.portfolio);
+           // textBox1.Text = JsonSerializer.Serialize<Tinkoff.Trading.OpenApi.Models.Portfolio>(mainForm.portfolio);
         }
     }
 }

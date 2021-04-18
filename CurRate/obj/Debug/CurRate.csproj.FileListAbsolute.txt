@@ -89,14 +89,12 @@ G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\System.Text.Json.xml
 G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\System.Threading.Tasks.Extensions.xml
 G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\System.ValueTuple.xml
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.csprojAssemblyReference.cache
-G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.BondsForm.resources
-G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.EtfsForm.resources
-G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.Form1.resources
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.PortfolioForm.resources
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.Properties.Resources.resources
-G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.StocksForm.resources
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.csproj.GenerateResource.cache
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.csproj.CoreCompileInputs.cache
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.csproj.CopyComplete
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.exe
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.pdb
+G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.MainForm.resources
+G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.SecuritiesForm.resources

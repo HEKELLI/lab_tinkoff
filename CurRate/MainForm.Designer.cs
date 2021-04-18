@@ -1,6 +1,6 @@
 ﻿namespace CurRate
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -61,22 +61,22 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(111, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.label1.Text = "Статус подключения";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(161, 53);
+            this.label2.Location = new System.Drawing.Point(126, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "Отключён";
             // 
             // but_form_portfolio
             // 
-            this.but_form_portfolio.Location = new System.Drawing.Point(258, 156);
+            this.but_form_portfolio.Location = new System.Drawing.Point(12, 78);
             this.but_form_portfolio.Name = "but_form_portfolio";
             this.but_form_portfolio.Size = new System.Drawing.Size(145, 23);
             this.but_form_portfolio.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             // but_stocks
             // 
-            this.but_stocks.Location = new System.Drawing.Point(258, 235);
+            this.but_stocks.Location = new System.Drawing.Point(12, 107);
             this.but_stocks.Name = "but_stocks";
             this.but_stocks.Size = new System.Drawing.Size(145, 23);
             this.but_stocks.TabIndex = 5;
@@ -96,7 +96,7 @@
             // 
             // but_bonds
             // 
-            this.but_bonds.Location = new System.Drawing.Point(258, 303);
+            this.but_bonds.Location = new System.Drawing.Point(12, 136);
             this.but_bonds.Name = "but_bonds";
             this.but_bonds.Size = new System.Drawing.Size(145, 23);
             this.but_bonds.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             // but_etfs
             // 
-            this.but_etfs.Location = new System.Drawing.Point(258, 358);
+            this.but_etfs.Location = new System.Drawing.Point(12, 165);
             this.but_etfs.Name = "but_etfs";
             this.but_etfs.Size = new System.Drawing.Size(145, 23);
             this.but_etfs.TabIndex = 7;
@@ -114,9 +114,9 @@
             this.but_etfs.UseVisualStyleBackColor = true;
             this.but_etfs.Click += new System.EventHandler(this.but_etfs_Click);
             // 
-            // Form1
+            // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(650, 566);
+            this.ClientSize = new System.Drawing.Size(650, 203);
             this.Controls.Add(this.but_etfs);
             this.Controls.Add(this.but_bonds);
             this.Controls.Add(this.but_stocks);
@@ -125,7 +125,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.text_box_token);
             this.Controls.Add(this.but_connect);
-            this.Name = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Главное меню";
             this.ResumeLayout(false);
             this.PerformLayout();
 

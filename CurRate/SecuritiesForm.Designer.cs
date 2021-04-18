@@ -1,7 +1,7 @@
 ﻿
 namespace CurRate
 {
-    partial class StocksForm
+    partial class SecuritiesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -858,7 +858,7 @@ namespace CurRate
             this.textBox34.Size = new System.Drawing.Size(214, 20);
             this.textBox34.TabIndex = 61;
             // 
-            // StocksForm
+            // SecuritiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -942,8 +942,8 @@ namespace CurRate
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.but_main_form);
-            this.Name = "StocksForm";
-            this.Text = "StocksForm";
+            this.Name = "SecuritiesForm";
+            this.Text = "Ценные бумаги";
             this.ResumeLayout(false);
             this.PerformLayout();
 
