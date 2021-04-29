@@ -98,3 +98,9 @@ G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.exe
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.pdb
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.MainForm.resources
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.SecuritiesForm.resources
+G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignColors.dll
+G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignThemes.Wpf.dll
+G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialSkin.dll
+G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignColors.pdb
+G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignThemes.Wpf.pdb
+G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignThemes.Wpf.xml
