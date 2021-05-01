@@ -57,6 +57,9 @@
     <Reference Include="Macross.Json.Extensions, Version=1.5.0.20143, Culture=neutral, PublicKeyToken=7158422f590468ee, processorArchitecture=MSIL">
       <HintPath>..\packages\Macross.Json.Extensions.1.5.0\lib\netstandard2.0\Macross.Json.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>

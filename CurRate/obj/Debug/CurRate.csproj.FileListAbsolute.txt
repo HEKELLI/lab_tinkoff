@@ -98,3 +98,4 @@ G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.exe
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.pdb
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.MainForm.resources
 G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.SecuritiesForm.resources
+G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialSkin.dll
