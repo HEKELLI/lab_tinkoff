@@ -27,10 +27,7 @@ namespace CurRate
         private Tinkoff.Trading.OpenApi.Models.Portfolio portfolio;
         private Tinkoff.Trading.OpenApi.Models.PortfolioCurrencies currencies;
         private int i = 0;
-        private void but_main_form_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
         private void get_currencies()
         {
             currencies = mainForm.engine.get_currencies();
@@ -43,7 +40,7 @@ namespace CurRate
         }
         public void write_portfolio()
         {
-            textBox1.Text = JsonSerializer.Serialize<Tinkoff.Trading.OpenApi.Models.Portfolio>(portfolio);
+            //textBox1.Text = JsonSerializer.Serialize<Tinkoff.Trading.OpenApi.Models.Portfolio>(portfolio);
         }
 
         private void but_show_rub_Click(object sender, EventArgs e)
@@ -97,12 +94,11 @@ namespace CurRate
                 }
             }
         }
-
         private void next_pos_Click(object sender, EventArgs e)
         {
-            if (i<portfolio.Positions.Count)
+            if (i < portfolio.Positions.Count)
             {
-                if (Convert.ToString(portfolio.Positions[i+1].InstrumentType) != "Currency")
+                if (Convert.ToString(portfolio.Positions[i + 1].InstrumentType) != "Currency")
                 {
                     i++;
                     write_position(portfolio.Positions[i]);
@@ -114,12 +110,17 @@ namespace CurRate
         {
             if (portfolio.Positions[i] != null)
             {
-                if (i>0)
+                if (i > 0)
                 {
                     i--;
                     write_position(portfolio.Positions[i]);
                 }
             }
+        }
+
+        private void but_main_form_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

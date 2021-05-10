@@ -96,6 +96,7 @@
             // but_form_portfolio
             // 
             this.but_form_portfolio.Depth = 0;
+            this.but_form_portfolio.Enabled = false;
             this.but_form_portfolio.Location = new System.Drawing.Point(12, 141);
             this.but_form_portfolio.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_form_portfolio.Name = "but_form_portfolio";
@@ -109,6 +110,7 @@
             // but_stocks
             // 
             this.but_stocks.Depth = 0;
+            this.but_stocks.Enabled = false;
             this.but_stocks.Location = new System.Drawing.Point(12, 170);
             this.but_stocks.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_stocks.Name = "but_stocks";
@@ -122,6 +124,7 @@
             // but_bonds
             // 
             this.but_bonds.Depth = 0;
+            this.but_bonds.Enabled = false;
             this.but_bonds.Location = new System.Drawing.Point(12, 199);
             this.but_bonds.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_bonds.Name = "but_bonds";
@@ -135,6 +138,7 @@
             // but_etfs
             // 
             this.but_etfs.Depth = 0;
+            this.but_etfs.Enabled = false;
             this.but_etfs.Location = new System.Drawing.Point(12, 228);
             this.but_etfs.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_etfs.Name = "but_etfs";

@@ -29,7 +29,6 @@ namespace CurRate
         /// </summary>
         private void InitializeComponent()
         {
-            this.but_main_form = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.but_show_rub = new MaterialSkin.Controls.MaterialRaisedButton();
             this.but_show_eur = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -50,25 +49,10 @@ namespace CurRate
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.next_pos = new MaterialSkin.Controls.MaterialRaisedButton();
             this.prev_pos = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.next_pos = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.but_main_form = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
-            // 
-            // but_main_form
-            // 
-            this.but_main_form.AutoSize = true;
-            this.but_main_form.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.but_main_form.Depth = 0;
-            this.but_main_form.Icon = null;
-            this.but_main_form.Location = new System.Drawing.Point(12, 77);
-            this.but_main_form.MouseState = MaterialSkin.MouseState.HOVER;
-            this.but_main_form.Name = "but_main_form";
-            this.but_main_form.Primary = true;
-            this.but_main_form.Size = new System.Drawing.Size(109, 36);
-            this.but_main_form.TabIndex = 0;
-            this.but_main_form.Text = "На главную";
-            this.but_main_form.UseVisualStyleBackColor = true;
-            this.but_main_form.Click += new System.EventHandler(this.but_main_form_Click);
             // 
             // materialLabel1
             // 
@@ -88,12 +72,11 @@ namespace CurRate
             this.but_show_rub.AutoSize = true;
             this.but_show_rub.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.but_show_rub.Depth = 0;
-            this.but_show_rub.Icon = null;
             this.but_show_rub.Location = new System.Drawing.Point(12, 129);
             this.but_show_rub.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_show_rub.Name = "but_show_rub";
             this.but_show_rub.Primary = true;
-            this.but_show_rub.Size = new System.Drawing.Size(47, 36);
+            this.but_show_rub.Size = new System.Drawing.Size(40, 23);
             this.but_show_rub.TabIndex = 4;
             this.but_show_rub.Text = "RUB";
             this.but_show_rub.UseVisualStyleBackColor = true;
@@ -104,12 +87,11 @@ namespace CurRate
             this.but_show_eur.AutoSize = true;
             this.but_show_eur.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.but_show_eur.Depth = 0;
-            this.but_show_eur.Icon = null;
             this.but_show_eur.Location = new System.Drawing.Point(65, 129);
             this.but_show_eur.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_show_eur.Name = "but_show_eur";
             this.but_show_eur.Primary = true;
-            this.but_show_eur.Size = new System.Drawing.Size(46, 36);
+            this.but_show_eur.Size = new System.Drawing.Size(40, 23);
             this.but_show_eur.TabIndex = 5;
             this.but_show_eur.Text = "EUR";
             this.but_show_eur.UseVisualStyleBackColor = true;
@@ -120,12 +102,11 @@ namespace CurRate
             this.but_show_usd.AutoSize = true;
             this.but_show_usd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.but_show_usd.Depth = 0;
-            this.but_show_usd.Icon = null;
             this.but_show_usd.Location = new System.Drawing.Point(117, 129);
             this.but_show_usd.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_show_usd.Name = "but_show_usd";
             this.but_show_usd.Primary = true;
-            this.but_show_usd.Size = new System.Drawing.Size(47, 36);
+            this.but_show_usd.Size = new System.Drawing.Size(40, 23);
             this.but_show_usd.TabIndex = 6;
             this.but_show_usd.Text = "USD";
             this.but_show_usd.UseVisualStyleBackColor = true;
@@ -150,7 +131,6 @@ namespace CurRate
             this.materialSingleLineTextField1.Enabled = false;
             this.materialSingleLineTextField1.Hint = "";
             this.materialSingleLineTextField1.Location = new System.Drawing.Point(406, 81);
-            this.materialSingleLineTextField1.MaxLength = 32767;
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
             this.materialSingleLineTextField1.PasswordChar = '\0';
@@ -181,7 +161,6 @@ namespace CurRate
             this.materialSingleLineTextField2.Enabled = false;
             this.materialSingleLineTextField2.Hint = "";
             this.materialSingleLineTextField2.Location = new System.Drawing.Point(406, 104);
-            this.materialSingleLineTextField2.MaxLength = 32767;
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
             this.materialSingleLineTextField2.PasswordChar = '\0';
@@ -199,7 +178,6 @@ namespace CurRate
             this.materialSingleLineTextField3.Enabled = false;
             this.materialSingleLineTextField3.Hint = "";
             this.materialSingleLineTextField3.Location = new System.Drawing.Point(406, 127);
-            this.materialSingleLineTextField3.MaxLength = 32767;
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
             this.materialSingleLineTextField3.PasswordChar = '\0';
@@ -217,7 +195,6 @@ namespace CurRate
             this.materialSingleLineTextField4.Enabled = false;
             this.materialSingleLineTextField4.Hint = "";
             this.materialSingleLineTextField4.Location = new System.Drawing.Point(406, 150);
-            this.materialSingleLineTextField4.MaxLength = 32767;
             this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField4.Name = "materialSingleLineTextField4";
             this.materialSingleLineTextField4.PasswordChar = '\0';
@@ -235,7 +212,6 @@ namespace CurRate
             this.materialSingleLineTextField5.Enabled = false;
             this.materialSingleLineTextField5.Hint = "";
             this.materialSingleLineTextField5.Location = new System.Drawing.Point(406, 173);
-            this.materialSingleLineTextField5.MaxLength = 32767;
             this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
             this.materialSingleLineTextField5.PasswordChar = '\0';
@@ -253,7 +229,6 @@ namespace CurRate
             this.materialSingleLineTextField6.Enabled = false;
             this.materialSingleLineTextField6.Hint = "";
             this.materialSingleLineTextField6.Location = new System.Drawing.Point(406, 196);
-            this.materialSingleLineTextField6.MaxLength = 32767;
             this.materialSingleLineTextField6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField6.Name = "materialSingleLineTextField6";
             this.materialSingleLineTextField6.PasswordChar = '\0';
@@ -271,7 +246,6 @@ namespace CurRate
             this.materialSingleLineTextField7.Enabled = false;
             this.materialSingleLineTextField7.Hint = "";
             this.materialSingleLineTextField7.Location = new System.Drawing.Point(406, 219);
-            this.materialSingleLineTextField7.MaxLength = 32767;
             this.materialSingleLineTextField7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField7.Name = "materialSingleLineTextField7";
             this.materialSingleLineTextField7.PasswordChar = '\0';
@@ -289,7 +263,6 @@ namespace CurRate
             this.materialSingleLineTextField8.Enabled = false;
             this.materialSingleLineTextField8.Hint = "";
             this.materialSingleLineTextField8.Location = new System.Drawing.Point(406, 242);
-            this.materialSingleLineTextField8.MaxLength = 32767;
             this.materialSingleLineTextField8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField8.Name = "materialSingleLineTextField8";
             this.materialSingleLineTextField8.PasswordChar = '\0';
@@ -379,45 +352,53 @@ namespace CurRate
             this.materialLabel9.TabIndex = 22;
             this.materialLabel9.Text = "Название компании";
             // 
+            // prev_pos
+            // 
+            this.prev_pos.Depth = 0;
+            this.prev_pos.Location = new System.Drawing.Point(166, 271);
+            this.prev_pos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.prev_pos.Name = "prev_pos";
+            this.prev_pos.Primary = true;
+            this.prev_pos.Size = new System.Drawing.Size(161, 33);
+            this.prev_pos.TabIndex = 25;
+            this.prev_pos.Text = "Предыдущая ценная бумага";
+            this.prev_pos.UseVisualStyleBackColor = true;
+            this.prev_pos.Click += new System.EventHandler(this.prev_pos_Click);
+            // 
             // next_pos
             // 
-            this.next_pos.AutoSize = true;
-            this.next_pos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.next_pos.Depth = 0;
-            this.next_pos.Icon = null;
-            this.next_pos.Location = new System.Drawing.Point(408, 281);
+            this.next_pos.Location = new System.Drawing.Point(420, 271);
             this.next_pos.MouseState = MaterialSkin.MouseState.HOVER;
             this.next_pos.Name = "next_pos";
             this.next_pos.Primary = true;
-            this.next_pos.Size = new System.Drawing.Size(228, 36);
-            this.next_pos.TabIndex = 23;
+            this.next_pos.Size = new System.Drawing.Size(161, 33);
+            this.next_pos.TabIndex = 26;
             this.next_pos.Text = "Следующая ценная бумага";
             this.next_pos.UseVisualStyleBackColor = true;
             this.next_pos.Click += new System.EventHandler(this.next_pos_Click);
             // 
-            // prev_pos
+            // but_main_form
             // 
-            this.prev_pos.AutoSize = true;
-            this.prev_pos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.prev_pos.Depth = 0;
-            this.prev_pos.Icon = null;
-            this.prev_pos.Location = new System.Drawing.Point(163, 281);
-            this.prev_pos.MouseState = MaterialSkin.MouseState.HOVER;
-            this.prev_pos.Name = "prev_pos";
-            this.prev_pos.Primary = true;
-            this.prev_pos.Size = new System.Drawing.Size(237, 36);
-            this.prev_pos.TabIndex = 24;
-            this.prev_pos.Text = "Предыдущая ценная бумага";
-            this.prev_pos.UseVisualStyleBackColor = true;
-            this.prev_pos.Click += new System.EventHandler(this.prev_pos_Click);
+            this.but_main_form.Depth = 0;
+            this.but_main_form.Location = new System.Drawing.Point(12, 71);
+            this.but_main_form.MouseState = MaterialSkin.MouseState.HOVER;
+            this.but_main_form.Name = "but_main_form";
+            this.but_main_form.Primary = true;
+            this.but_main_form.Size = new System.Drawing.Size(111, 33);
+            this.but_main_form.TabIndex = 27;
+            this.but_main_form.Text = "На главную";
+            this.but_main_form.UseVisualStyleBackColor = true;
+            this.but_main_form.Click += new System.EventHandler(this.but_main_form_Click);
             // 
             // PortfolioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 326);
-            this.Controls.Add(this.prev_pos);
+            this.Controls.Add(this.but_main_form);
             this.Controls.Add(this.next_pos);
+            this.Controls.Add(this.prev_pos);
             this.Controls.Add(this.materialLabel9);
             this.Controls.Add(this.materialLabel8);
             this.Controls.Add(this.materialLabel7);
@@ -438,7 +419,6 @@ namespace CurRate
             this.Controls.Add(this.but_show_eur);
             this.Controls.Add(this.but_show_rub);
             this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.but_main_form);
             this.Name = "PortfolioForm";
             this.Text = "Портфолио";
             this.ResumeLayout(false);
@@ -447,8 +427,6 @@ namespace CurRate
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialRaisedButton but_main_form;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialRaisedButton but_show_rub;
         private MaterialSkin.Controls.MaterialRaisedButton but_show_eur;
@@ -469,7 +447,8 @@ namespace CurRate
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
-        private MaterialSkin.Controls.MaterialRaisedButton next_pos;
         private MaterialSkin.Controls.MaterialRaisedButton prev_pos;
+        private MaterialSkin.Controls.MaterialRaisedButton next_pos;
+        private MaterialSkin.Controls.MaterialRaisedButton but_main_form;
     }
 }
