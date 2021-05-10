@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
 using Tinkoff.Trading.OpenApi.Network;
+using MaterialSkin.Controls;
 
 namespace CurRate
 {
-    public partial class SecuritiesForm : Form
+    public partial class SecuritiesForm : MaterialForm
     {
         public SecuritiesForm(MainForm mainForm, string SecuritiesType)
         {
