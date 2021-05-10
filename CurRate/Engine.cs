@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tinkoff.Trading.OpenApi.Network;
+using System.IO;
 
 namespace CurRate
 {
@@ -19,18 +20,23 @@ namespace CurRate
         private Tinkoff.Trading.OpenApi.Models.Portfolio portfolio;
         private Tinkoff.Trading.OpenApi.Models.PortfolioCurrencies currencies;
         private string brokerAccountId = "SB3336849";
+        Tinkoff.Trading.OpenApi.Network.SandboxContext register;
+        public Tinkoff.Trading.OpenApi.Models.SandboxAccount account;
         int tmp = 0;
         private bool flag = false;
-        public void get_connection(string token)
+        string token;
+        public void get_connection()
         {
             connection = ConnectionFactory.GetSandboxConnection(token);
             context = connection.Context;
+            register = context;
+            register_sandbox();
             get_stocks_async();
             get_bonds_async();
             get_etfs_async();
-            get_porfolio_async();
+            //get_porfolio_async();
             get_currencies_async();
-            //register();
+            
         }
         /*
         public async void register()
@@ -40,6 +46,32 @@ namespace CurRate
             brokerAccountId = Account.BrokerAccountId;
         }
         */
+        private async void register_sandbox()
+        {
+            account = await register.RegisterAsync(Tinkoff.Trading.OpenApi.Models.BrokerAccountType.Tinkoff);
+            get_porfolio_async();
+            flag = true;
+        }
+        public string get_token()
+        {
+            StreamReader sr = new StreamReader("token.txt");
+            token = sr.ReadLine();
+            sr.Close();
+            if (token == null)
+            {
+                return "Not found";
+            }
+            else
+            { 
+                return token; 
+            }
+        }
+        public void set_token(string token)
+        {
+            StreamWriter f = new StreamWriter("token.txt", true);
+            f.WriteLine(token);
+            f.Close();
+        }
         public Tinkoff.Trading.OpenApi.Models.PortfolioCurrencies get_currencies()
         {
             get_currencies_async();
@@ -76,7 +108,7 @@ namespace CurRate
 
         private async void get_porfolio_async()
         {
-            portfolio = await context.PortfolioAsync(brokerAccountId);
+            portfolio = await context.PortfolioAsync(account.BrokerAccountId);
             flag = true;
         }
 

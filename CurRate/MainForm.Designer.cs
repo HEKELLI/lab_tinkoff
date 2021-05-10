@@ -36,6 +36,8 @@
             this.but_stocks = new MaterialSkin.Controls.MaterialRaisedButton();
             this.but_bonds = new MaterialSkin.Controls.MaterialRaisedButton();
             this.but_etfs = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // but_connect
@@ -45,9 +47,9 @@
             this.but_connect.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_connect.Name = "but_connect";
             this.but_connect.Primary = true;
-            this.but_connect.Size = new System.Drawing.Size(75, 23);
+            this.but_connect.Size = new System.Drawing.Size(128, 23);
             this.but_connect.TabIndex = 0;
-            this.but_connect.Text = "Connect";
+            this.but_connect.Text = "Подключиться";
             this.but_connect.UseVisualStyleBackColor = true;
             this.but_connect.Click += new System.EventHandler(this.but_connect_Click);
             // 
@@ -64,8 +66,9 @@
             this.text_box_token.SelectionStart = 0;
             this.text_box_token.Size = new System.Drawing.Size(545, 23);
             this.text_box_token.TabIndex = 1;
-            this.text_box_token.Text = "Введите токен для подключения";
+            this.text_box_token.Text = "Введите токен для подключения и нажмите кнопку \"Сохранить\"";
             this.text_box_token.UseSystemPasswordChar = false;
+            this.text_box_token.Visible = false;
             // 
             // label1
             // 
@@ -73,7 +76,7 @@
             this.label1.Depth = 0;
             this.label1.Font = new System.Drawing.Font("Roboto", 11F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(9, 116);
+            this.label1.Location = new System.Drawing.Point(9, 149);
             this.label1.MouseState = MaterialSkin.MouseState.HOVER;
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 19);
@@ -86,18 +89,18 @@
             this.label2.Depth = 0;
             this.label2.Font = new System.Drawing.Font("Roboto", 11F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(201, 116);
+            this.label2.Location = new System.Drawing.Point(173, 149);
             this.label2.MouseState = MaterialSkin.MouseState.HOVER;
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 19);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Отключён";
+            this.label2.Text = "Отключен";
             // 
             // but_form_portfolio
             // 
             this.but_form_portfolio.Depth = 0;
             this.but_form_portfolio.Enabled = false;
-            this.but_form_portfolio.Location = new System.Drawing.Point(12, 141);
+            this.but_form_portfolio.Location = new System.Drawing.Point(12, 174);
             this.but_form_portfolio.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_form_portfolio.Name = "but_form_portfolio";
             this.but_form_portfolio.Primary = true;
@@ -111,7 +114,7 @@
             // 
             this.but_stocks.Depth = 0;
             this.but_stocks.Enabled = false;
-            this.but_stocks.Location = new System.Drawing.Point(12, 170);
+            this.but_stocks.Location = new System.Drawing.Point(12, 203);
             this.but_stocks.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_stocks.Name = "but_stocks";
             this.but_stocks.Primary = true;
@@ -125,7 +128,7 @@
             // 
             this.but_bonds.Depth = 0;
             this.but_bonds.Enabled = false;
-            this.but_bonds.Location = new System.Drawing.Point(12, 199);
+            this.but_bonds.Location = new System.Drawing.Point(12, 232);
             this.but_bonds.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_bonds.Name = "but_bonds";
             this.but_bonds.Primary = true;
@@ -139,7 +142,7 @@
             // 
             this.but_etfs.Depth = 0;
             this.but_etfs.Enabled = false;
-            this.but_etfs.Location = new System.Drawing.Point(12, 228);
+            this.but_etfs.Location = new System.Drawing.Point(12, 261);
             this.but_etfs.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_etfs.Name = "but_etfs";
             this.but_etfs.Primary = true;
@@ -149,10 +152,39 @@
             this.but_etfs.UseVisualStyleBackColor = true;
             this.but_etfs.Click += new System.EventHandler(this.but_etfs_Click);
             // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(490, 104);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(201, 31);
+            this.materialRaisedButton2.TabIndex = 10;
+            this.materialRaisedButton2.Text = "Изменить существующий токен";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
+            // materialRaisedButton3
+            // 
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(377, 104);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(107, 31);
+            this.materialRaisedButton3.TabIndex = 11;
+            this.materialRaisedButton3.Text = "Сохранить";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Visible = false;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
+            // 
             // MainForm
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(650, 315);
+            this.ClientSize = new System.Drawing.Size(697, 315);
+            this.Controls.Add(this.materialRaisedButton3);
+            this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.but_etfs);
             this.Controls.Add(this.but_bonds);
             this.Controls.Add(this.but_stocks);
@@ -178,6 +210,8 @@
         private MaterialSkin.Controls.MaterialRaisedButton but_stocks;
         private MaterialSkin.Controls.MaterialRaisedButton but_bonds;
         private MaterialSkin.Controls.MaterialRaisedButton but_etfs;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton3;
     }
 }
 
