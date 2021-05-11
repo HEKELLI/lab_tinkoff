@@ -104,3 +104,4 @@ G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialSkin.dll
 G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignColors.pdb
 G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignThemes.Wpf.pdb
 G:\принж\lab_pr\lab_tinkoff\CurRate\bin\Debug\MaterialDesignThemes.Wpf.xml
+G:\принж\lab_pr\lab_tinkoff\CurRate\obj\Debug\CurRate.Details.resources

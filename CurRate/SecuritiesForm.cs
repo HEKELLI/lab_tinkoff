@@ -22,6 +22,7 @@ namespace CurRate
             get_stocks_by_type(SecuritiesType);
         }
         MainForm mainForm;
+        Details detailsForm;
         public Tinkoff.Trading.OpenApi.Models.MarketInstrument figi_search;
         public Tinkoff.Trading.OpenApi.Models.MarketInstrumentList ticker_search;
         public Tinkoff.Trading.OpenApi.Models.MarketInstrumentList Securities;
@@ -213,7 +214,8 @@ namespace CurRate
         private async void searchbyFigi(string figi)
         {
             figi_search = await mainForm.engine.context.MarketSearchByFigiAsync(figi);
-            write_stock1(figi_search);
+            detailsForm = new Details(mainForm, figi_search);
+            detailsForm.ShowDialog();
         }
 
         private void but_ticker_search_Click(object sender, EventArgs e)
@@ -225,7 +227,8 @@ namespace CurRate
             ticker_search = await mainForm.engine.context.MarketSearchByTickerAsync(ticker);
             Tinkoff.Trading.OpenApi.Models.MarketInstrument ticker_instrument_search;
             ticker_instrument_search = ticker_search.Instruments[0];
-            write_stock1(ticker_instrument_search);
+            detailsForm = new Details(mainForm, ticker_instrument_search);
+            detailsForm.ShowDialog();
         }
     }
 }

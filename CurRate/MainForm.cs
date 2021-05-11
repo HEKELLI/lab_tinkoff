@@ -22,7 +22,6 @@ namespace CurRate
             //reg = engine.connection.Context;
         }
         public Engine engine = new Engine();
-
         PortfolioForm portfolioForm;
         SecuritiesForm securitiesForm;
         string token;

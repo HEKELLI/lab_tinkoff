@@ -106,7 +106,7 @@ namespace CurRate
                 return null;
         }
 
-        private async void get_porfolio_async()
+        public async void get_porfolio_async()
         {
             portfolio = await context.PortfolioAsync(account.BrokerAccountId);
             flag = true;
