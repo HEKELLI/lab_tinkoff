@@ -52,6 +52,9 @@ namespace CurRate
             this.prev_pos = new MaterialSkin.Controls.MaterialRaisedButton();
             this.next_pos = new MaterialSkin.Controls.MaterialRaisedButton();
             this.but_main_form = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialSingleLineTextField9 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -60,7 +63,7 @@ namespace CurRate
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(12, 180);
+            this.materialLabel1.Location = new System.Drawing.Point(12, 137);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(134, 19);
@@ -72,7 +75,7 @@ namespace CurRate
             this.but_show_rub.AutoSize = true;
             this.but_show_rub.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.but_show_rub.Depth = 0;
-            this.but_show_rub.Location = new System.Drawing.Point(12, 129);
+            this.but_show_rub.Location = new System.Drawing.Point(12, 106);
             this.but_show_rub.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_show_rub.Name = "but_show_rub";
             this.but_show_rub.Primary = true;
@@ -87,7 +90,7 @@ namespace CurRate
             this.but_show_eur.AutoSize = true;
             this.but_show_eur.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.but_show_eur.Depth = 0;
-            this.but_show_eur.Location = new System.Drawing.Point(65, 129);
+            this.but_show_eur.Location = new System.Drawing.Point(65, 106);
             this.but_show_eur.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_show_eur.Name = "but_show_eur";
             this.but_show_eur.Primary = true;
@@ -102,7 +105,7 @@ namespace CurRate
             this.but_show_usd.AutoSize = true;
             this.but_show_usd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.but_show_usd.Depth = 0;
-            this.but_show_usd.Location = new System.Drawing.Point(117, 129);
+            this.but_show_usd.Location = new System.Drawing.Point(117, 106);
             this.but_show_usd.MouseState = MaterialSkin.MouseState.HOVER;
             this.but_show_usd.Name = "but_show_usd";
             this.but_show_usd.Primary = true;
@@ -391,11 +394,60 @@ namespace CurRate
             this.but_main_form.UseVisualStyleBackColor = true;
             this.but_main_form.Click += new System.EventHandler(this.but_main_form_Click);
             // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(12, 201);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(75, 23);
+            this.materialRaisedButton1.TabIndex = 28;
+            this.materialRaisedButton1.Text = "Продать";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // materialSingleLineTextField9
+            // 
+            this.materialSingleLineTextField9.Depth = 0;
+            this.materialSingleLineTextField9.Hint = "";
+            this.materialSingleLineTextField9.Location = new System.Drawing.Point(12, 172);
+            this.materialSingleLineTextField9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSingleLineTextField9.Name = "materialSingleLineTextField9";
+            this.materialSingleLineTextField9.PasswordChar = '\0';
+            this.materialSingleLineTextField9.SelectedText = "";
+            this.materialSingleLineTextField9.SelectionLength = 0;
+            this.materialSingleLineTextField9.SelectionStart = 0;
+            this.materialSingleLineTextField9.Size = new System.Drawing.Size(300, 23);
+            this.materialSingleLineTextField9.TabIndex = 29;
+            this.materialSingleLineTextField9.Text = "Введите количество лотов для продажи";
+            this.materialSingleLineTextField9.UseSystemPasswordChar = false;
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel10.Location = new System.Drawing.Point(11, 310);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(630, 76);
+            this.materialLabel10.TabIndex = 30;
+            this.materialLabel10.Text = "Произошла ошибка!\r\nПроверьте правильность идентификатора.\r\nТакже проверьте количе" +
+    "ство лотов ценных бумаг.\r\nКоличество лотов не должно превышать имеющееся и не до" +
+    "лжно быть меньше нуля.";
+            this.materialLabel10.Visible = false;
+            // 
             // PortfolioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 326);
+            this.ClientSize = new System.Drawing.Size(652, 310);
+            this.Controls.Add(this.materialLabel10);
+            this.Controls.Add(this.materialSingleLineTextField9);
+            this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.but_main_form);
             this.Controls.Add(this.next_pos);
             this.Controls.Add(this.prev_pos);
@@ -450,5 +502,8 @@ namespace CurRate
         private MaterialSkin.Controls.MaterialRaisedButton prev_pos;
         private MaterialSkin.Controls.MaterialRaisedButton next_pos;
         private MaterialSkin.Controls.MaterialRaisedButton but_main_form;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
     }
 }

@@ -19,11 +19,13 @@ namespace CurRate
         {
             InitializeComponent();
             this.mainForm = mainForm;
+            thisForm = this;
             get_portfolio();
             get_currencies();
             start_form_and_write_position();
         }
         MainForm mainForm;
+        PortfolioForm thisForm;
         private Tinkoff.Trading.OpenApi.Models.Portfolio portfolio;
         private Tinkoff.Trading.OpenApi.Models.PortfolioCurrencies currencies;
         private int i = 0;
@@ -121,6 +123,33 @@ namespace CurRate
         private void but_main_form_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            Tinkoff.Trading.OpenApi.Models.MarketOrder order = new Tinkoff.Trading.OpenApi.Models.MarketOrder(materialSingleLineTextField1.Text, Convert.ToInt32(materialSingleLineTextField9.Text), Tinkoff.Trading.OpenApi.Models.OperationType.Sell);
+            market_sell(order);
+        }
+        private async void market_sell(Tinkoff.Trading.OpenApi.Models.MarketOrder order)
+        {
+            Tinkoff.Trading.OpenApi.Models.PlacedMarketOrder request;
+            try
+            {
+                request = await mainForm.engine.context.PlaceMarketOrderAsync(order);
+                mainForm.engine.get_porfolio_async();
+                get_portfolio();
+                get_currencies();
+                write_position(portfolio.Positions[i]);
+                materialLabel10.Text = "Транзакция прошла успешно";
+                materialLabel10.BackColor = Color.LightGreen;
+                materialLabel10.Visible = true;
+                this.Height = 336;
+            }
+            catch
+            {
+                this.Height = 397;
+                materialLabel10.Visible = true;
+            }
         }
     }
 }

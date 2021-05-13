@@ -26,7 +26,10 @@ namespace CurRate
         public Tinkoff.Trading.OpenApi.Models.MarketInstrument figi_search;
         public Tinkoff.Trading.OpenApi.Models.MarketInstrumentList ticker_search;
         public Tinkoff.Trading.OpenApi.Models.MarketInstrumentList Securities;
-        int i = 0;
+        int i1 = 0;
+        int i2 = 1;
+        int i3 = 2;
+        int i4 = 3;
 
         private void but_main_form_Click(object sender, EventArgs e)
         {
@@ -57,18 +60,15 @@ namespace CurRate
         }
         public void write_stocks()
         {
-            write_stock1(Securities.Instruments[i]);
-            i++;
-            write_stock2(Securities.Instruments[i]);
-            i++;
-            write_stock3(Securities.Instruments[i]);
-            i++;
-            write_stock4(Securities.Instruments[i]);
+            write_stock1(Securities.Instruments[i1]);
+            write_stock2(Securities.Instruments[i2]);
+            write_stock3(Securities.Instruments[i3]);
+            write_stock4(Securities.Instruments[i4]);
         }
 
         public void write_stock1(Tinkoff.Trading.OpenApi.Models.MarketInstrument security)
         {
-            label18.Text = Convert.ToString(i + 1);
+            label18.Text = Convert.ToString(i1 + 1);
             textBox1.Text = security.Figi;
             textBox4.Text = security.Ticker;
             textBox5.Text = security.Isin;
@@ -81,7 +81,7 @@ namespace CurRate
 
         public void write_stock2(Tinkoff.Trading.OpenApi.Models.MarketInstrument security)
         {
-            label19.Text = Convert.ToString(i + 1);
+            label19.Text = Convert.ToString(i2 + 1);
             textBox11.Text = security.Figi;
             textBox12.Text = security.Ticker;
             textBox13.Text = security.Isin;
@@ -93,7 +93,7 @@ namespace CurRate
         }
         public void write_stock3(Tinkoff.Trading.OpenApi.Models.MarketInstrument security)
         {
-            label21.Text = Convert.ToString(i + 1);
+            label21.Text = Convert.ToString(i3 + 1);
             textBox26.Text = security.Figi;
             textBox25.Text = security.Ticker;
             textBox24.Text = security.Isin;
@@ -106,7 +106,7 @@ namespace CurRate
 
         public void write_stock4(Tinkoff.Trading.OpenApi.Models.MarketInstrument security)
         {
-            label31.Text = Convert.ToString(i + 1);
+            label31.Text = Convert.ToString(i4 + 1);
             textBox34.Text = security.Figi;
             textBox33.Text = security.Ticker;
             textBox32.Text = security.Isin;
@@ -119,91 +119,123 @@ namespace CurRate
 
         private void but_next_stocks_Click(object sender, EventArgs e)
         {
-            if (i + 4 > Securities.Instruments.Count) 
+            if (i4 + 4 > Securities.Instruments.Count) 
             {
-                if(i + 3 > Securities.Instruments.Count)
+                if(i4 + 3 > Securities.Instruments.Count)
                 {
-                    if(i + 2 > Securities.Instruments.Count)
+                    if(i4 + 2 > Securities.Instruments.Count)
                     {
-                        if(i + 1 > Securities.Instruments.Count)
+                        if(i4 + 1 > Securities.Instruments.Count)
                         {
                             
                         }
                         else
                         {
-                            i++;
-                            write_stock1(Securities.Instruments[i]);
+                            i1 += 1;
+                            write_stock1(Securities.Instruments[i1]);
+                            i2 += 1;
+                            write_stock2(Securities.Instruments[i2]);
+                            i3 += 1;
+                            write_stock3(Securities.Instruments[i3]);
+                            i4 += 1;
+                            write_stock4(Securities.Instruments[i4]);
                         }
                     }
                     else
                     {
-                        i++;
-                        write_stock1(Securities.Instruments[i]);
-                        i++;
-                        write_stock2(Securities.Instruments[i]);
+                        i1 += 2;
+                        write_stock1(Securities.Instruments[i1]);
+                        i2 += 2;
+                        write_stock2(Securities.Instruments[i2]);
+                        i3 += 2;
+                        write_stock3(Securities.Instruments[i3]);
+                        i4 += 2;
+                        write_stock4(Securities.Instruments[i4]);
                     }
                 }
                 else
                 {
-                    i++;
-                    write_stock1(Securities.Instruments[i]);
-                    i++;
-                    write_stock2(Securities.Instruments[i]);
-                    i++;
-                    write_stock3(Securities.Instruments[i]);
+                    i1 += 3;
+                    write_stock1(Securities.Instruments[i1]);
+                    i2 += 3;
+                    write_stock2(Securities.Instruments[i2]);
+                    i3 += 3;
+                    write_stock3(Securities.Instruments[i3]);
+                    i4 += 3;
+                    write_stock4(Securities.Instruments[i4]);
                 }
             }
             else
             {
-                i++;
-                write_stock1(Securities.Instruments[i]);
-                i++;
-                write_stock2(Securities.Instruments[i]);
-                i++;
-                write_stock3(Securities.Instruments[i]);
-                i++;
-                write_stock4(Securities.Instruments[i]);
+                i1 += 4;
+                write_stock1(Securities.Instruments[i1]);
+                i2 += 4;
+                write_stock2(Securities.Instruments[i2]);
+                i3 += 4;
+                write_stock3(Securities.Instruments[i3]);
+                i4 += 4;
+                write_stock4(Securities.Instruments[i4]);
             }
         }
 
         private void but_prev_stocks_Click(object sender, EventArgs e)
         {
-            if (i - 3 < 0)
+            if (i1 - 4 < 0)
             {
-                if (i - 2 < 0)
+                if (i1 - 3 < 0)
                 {
-                    if (i - 1 < 0)
+                    if (i1 - 2 < 0)
                     {
-                       
+                        if (i1 - 1 < 0)
+                        {
+
+                        }
+                        else
+                        {
+                            i1 -= 1;
+                            write_stock1(Securities.Instruments[i1]);
+                            i2 -= 1;
+                            write_stock2(Securities.Instruments[i2]);
+                            i3 -= 1;
+                            write_stock3(Securities.Instruments[i3]);
+                            i4 -= 1;
+                            write_stock4(Securities.Instruments[i4]);
+                        }
                     }
                     else
                     {
-                        write_stock2(Securities.Instruments[i]);
-                        i--;
-                        write_stock1(Securities.Instruments[i]);
-                        i--;
+                        i1 -= 2;
+                        write_stock1(Securities.Instruments[i1]);
+                        i2 -= 2;
+                        write_stock2(Securities.Instruments[i2]);
+                        i3 -= 2;
+                        write_stock3(Securities.Instruments[i3]);
+                        i4 -= 2;
+                        write_stock4(Securities.Instruments[i4]);
                     }
                 }
                 else
                 {
-                    write_stock3(Securities.Instruments[i]);
-                    i--;
-                    write_stock2(Securities.Instruments[i]);
-                    i--;
-                    write_stock1(Securities.Instruments[i]);
-                    i--;
+                    i1 -= 3;
+                    write_stock1(Securities.Instruments[i1]);
+                    i2 -= 3;
+                    write_stock2(Securities.Instruments[i2]);
+                    i3 -= 3;
+                    write_stock3(Securities.Instruments[i3]);
+                    i4 -= 3;
+                    write_stock4(Securities.Instruments[i4]);
                 }
             }
             else
             {
-                write_stock4(Securities.Instruments[i]);
-                i--;
-                write_stock3(Securities.Instruments[i]);
-                i--;
-                write_stock2(Securities.Instruments[i]);
-                i--;
-                write_stock1(Securities.Instruments[i]);
-                i--;
+                i1 -= 4;
+                write_stock1(Securities.Instruments[i1]);
+                i2 -= 4;
+                write_stock2(Securities.Instruments[i2]);
+                i3 -= 4;
+                write_stock3(Securities.Instruments[i3]);
+                i4 -= 4;
+                write_stock4(Securities.Instruments[i4]);
             }
         }
 
@@ -228,6 +260,30 @@ namespace CurRate
             Tinkoff.Trading.OpenApi.Models.MarketInstrument ticker_instrument_search;
             ticker_instrument_search = ticker_search.Instruments[0];
             detailsForm = new Details(mainForm, ticker_instrument_search);
+            detailsForm.ShowDialog();
+        }
+
+        private void detail_but1_Click(object sender, EventArgs e)
+        {
+            detailsForm = new Details(mainForm, Securities.Instruments[i1]);
+            detailsForm.ShowDialog();
+        }
+
+        private void detail_but2_Click(object sender, EventArgs e)
+        {
+            detailsForm = new Details(mainForm, Securities.Instruments[i2]);
+            detailsForm.ShowDialog();
+        }
+
+        private void detail_but3_Click(object sender, EventArgs e)
+        {
+            detailsForm = new Details(mainForm, Securities.Instruments[i3]);
+            detailsForm.ShowDialog();
+        }
+
+        private void detail_but4_Click(object sender, EventArgs e)
+        {
+            detailsForm = new Details(mainForm, Securities.Instruments[i4]);
             detailsForm.ShowDialog();
         }
     }

@@ -108,6 +108,10 @@ namespace CurRate
             this.textBox32 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.textBox33 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.textBox34 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.detail_but2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.detail_but1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.detail_but3 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.detail_but4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // but_main_form
@@ -1273,11 +1277,67 @@ namespace CurRate
             this.textBox34.TabIndex = 61;
             this.textBox34.UseSystemPasswordChar = false;
             // 
+            // detail_but2
+            // 
+            this.detail_but2.Depth = 0;
+            this.detail_but2.Location = new System.Drawing.Point(197, 331);
+            this.detail_but2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.detail_but2.Name = "detail_but2";
+            this.detail_but2.Primary = true;
+            this.detail_but2.Size = new System.Drawing.Size(91, 23);
+            this.detail_but2.TabIndex = 79;
+            this.detail_but2.Text = "Подробно";
+            this.detail_but2.UseVisualStyleBackColor = true;
+            this.detail_but2.Click += new System.EventHandler(this.detail_but2_Click);
+            // 
+            // detail_but1
+            // 
+            this.detail_but1.Depth = 0;
+            this.detail_but1.Location = new System.Drawing.Point(195, 106);
+            this.detail_but1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.detail_but1.Name = "detail_but1";
+            this.detail_but1.Primary = true;
+            this.detail_but1.Size = new System.Drawing.Size(93, 23);
+            this.detail_but1.TabIndex = 80;
+            this.detail_but1.Text = "Подробно";
+            this.detail_but1.UseVisualStyleBackColor = true;
+            this.detail_but1.Click += new System.EventHandler(this.detail_but1_Click);
+            // 
+            // detail_but3
+            // 
+            this.detail_but3.Depth = 0;
+            this.detail_but3.Location = new System.Drawing.Point(698, 106);
+            this.detail_but3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.detail_but3.Name = "detail_but3";
+            this.detail_but3.Primary = true;
+            this.detail_but3.Size = new System.Drawing.Size(82, 23);
+            this.detail_but3.TabIndex = 81;
+            this.detail_but3.Text = "Подробно";
+            this.detail_but3.UseVisualStyleBackColor = true;
+            this.detail_but3.Click += new System.EventHandler(this.detail_but3_Click);
+            // 
+            // detail_but4
+            // 
+            this.detail_but4.Depth = 0;
+            this.detail_but4.Location = new System.Drawing.Point(698, 334);
+            this.detail_but4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.detail_but4.Name = "detail_but4";
+            this.detail_but4.Primary = true;
+            this.detail_but4.Size = new System.Drawing.Size(82, 23);
+            this.detail_but4.TabIndex = 82;
+            this.detail_but4.Text = "Подробно";
+            this.detail_but4.UseVisualStyleBackColor = true;
+            this.detail_but4.Click += new System.EventHandler(this.detail_but4_Click);
+            // 
             // SecuritiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1001, 662);
+            this.Controls.Add(this.detail_but4);
+            this.Controls.Add(this.detail_but3);
+            this.Controls.Add(this.detail_but1);
+            this.Controls.Add(this.detail_but2);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label33);
@@ -1445,5 +1505,9 @@ namespace CurRate
         private MaterialSkin.Controls.MaterialSingleLineTextField textBox32;
         private MaterialSkin.Controls.MaterialSingleLineTextField textBox33;
         private MaterialSkin.Controls.MaterialSingleLineTextField textBox34;
+        private MaterialSkin.Controls.MaterialRaisedButton detail_but2;
+        private MaterialSkin.Controls.MaterialRaisedButton detail_but1;
+        private MaterialSkin.Controls.MaterialRaisedButton detail_but3;
+        private MaterialSkin.Controls.MaterialRaisedButton detail_but4;
     }
 }
